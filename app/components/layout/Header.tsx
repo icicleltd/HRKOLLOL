@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
@@ -21,10 +22,7 @@ export default function Header() {
             >
                 <div className="flex items-center justify-between h-17.5 px-6">
                     {/* LOGO */}
-                    <div className="text-white font-semibold text-lg flex items-center">
-                        <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
-                        Hasibur Reza Kallol
-                    </div>
+                    <Image src="/kallal.png" alt="Hasibur Reza Kallol" width={350} height={350} />
 
                     {/* BURGER */}
                     <button
