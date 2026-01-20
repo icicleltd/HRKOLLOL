@@ -8,9 +8,11 @@ export default function Hero() {
     const [scrollProgress, setScrollProgress] = useState(0);
     const [isDesktop, setIsDesktop] = useState(false);
     const [mounted, setMounted] = useState(false);
+    const [textAnimate, setTextAnimate] = useState(false); // <-- added
 
     useEffect(() => {
         setMounted(true);
+        setTextAnimate(true); // <-- added
 
         const checkDesktop = () => {
             setIsDesktop(window.innerWidth >= 768);
@@ -123,7 +125,7 @@ export default function Hero() {
 
                     {/* Bottom Text */}
                     <div
-                        className="mt-auto"
+                        className={`mt-auto ${textAnimate ? "slideUpSlow" : ""}`} // <-- updated
                         style={{
                             opacity: isDesktop ? Math.max(1 - scrollProgress * 1.5, 0) : 1
                         }}

@@ -14,11 +14,11 @@ const LeftSide = () => {
         {/* Top Line */}
         <span className="w-px h-24 bg-white/40" />
 
-        <FaFacebookF size={14} className="opacity-80 hover:opacity-100 transition" />
-        <FaTwitter size={14} className="opacity-80 hover:opacity-100 transition" />
-        <FaInstagram size={14} className="opacity-80 hover:opacity-100 transition" />
-        <FaLinkedinIn size={14} className="opacity-80 hover:opacity-100 transition" />
-        <FaYoutube size={14} className="opacity-80 hover:opacity-100 transition" />
+        <FaFacebookF size={20} className="opacity-80 hover:opacity-100 transition" />
+        <FaTwitter size={20} className="opacity-80 hover:opacity-100 transition" />
+        <FaInstagram size={20} className="opacity-80 hover:opacity-100 transition" />
+        <FaLinkedinIn size={20} className="opacity-80 hover:opacity-100 transition" />
+        <FaYoutube size={20} className="opacity-80 hover:opacity-100 transition" />
 
         {/* Bottom Line */}
         <span className="w-px h-24 bg-white/40" />
